@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Math Quiz </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+        <center>
+	<h4 id="score_player1"> Score = </h4> <span id="score1"> 0 </span>
+	<h4 id="score_player2"> Score = </h4> <span id="score2"> 0 </span>
+	<div class="container">
+			<h1 style="color: gold;"> <b> <i> Be the MATH CHAMPION </i> </b></h1>
+			<h2 id="questionTurn" style="color: green;"><i> <b> Question Turn = </b></i></h2>
+			<h2 id="answerTurn" style="color: green;"><i><b> Answer Turn = </b></i></h2>
+			<div id="output" class="col-lg-12"> 
+
+			</div>
+			<br>
+			<br>
+			<label style="color: maroon;"><b><i> When sending the 2 numbers (equation): </i></b> <b style="color: darkolivegreen;"><b><i> Don't give numbers that have 5 or more digits as it might be difficult for the the other player. </i></b></b></label>
+			<br>
+			<br>
+            <h3 id="number1" style="color:darkmagenta"><b><i> Number 1 </i></b></h3>
+				<input id="input1" class="form-control" placeholder = "Enter a reasonable number. Remember: This will be the 1st number in the equation." type="number">
+			<br>
+            <br>
+            <h3 id="number2" style="color:darkmagenta"><b><i> Number 2 </i></b></h3>
+            <input id="input2" class="form-control" placeholder = "Enter a reasonable number. Remember: This will be the 2nd number in the equation." type="number">
+			<button id="buttonSubmit" onclick="buttonSend()" class="btn btn-danger"> Submit numbers </button>
+		</center>
+	</div>
+
+	<script src="main_2.js"></script>
+</body>
+
+</html>
